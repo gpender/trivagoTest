@@ -69,7 +69,7 @@
     "amount": 5.00,
     "currency": "USD"
   },
-  "status":0,
+  "status":"Success",
   "customer_support":
     {
       "phone_numbers":[{
