@@ -74,7 +74,7 @@ module.exports = (app) => {
         }
       };
 
-      res.send(JSON.stringify(bookingInfo));
+      res.send(bookingInfo);
   });
 
 
@@ -277,6 +277,6 @@ const hotelData = {
       }
   };
 
-    res.send(JSON.stringify(hotelData));
+    res.send(hotelData);
   })
 }
