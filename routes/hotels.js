@@ -2,7 +2,7 @@
 
 
 module.exports = (app) => {
-  app.get('/api/hotels',(req,res)=>{
+  app.get('/api/booking_availability',(req,res)=>{
     console.log(req.body);
     console.log(req.headers);
 
