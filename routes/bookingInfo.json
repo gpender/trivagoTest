@@ -68,5 +68,22 @@
   "final_price_at_checkout": {
     "amount": 5.00,
     "currency": "USD"
-  }
+  },
+  "status":"cancelled",
+  "customer_support":[
+    {
+      "phone_numbers":[{
+        "contact":"guy.pender@me.com",
+        "description":"email"
+      }],
+      "emails":[{
+        "contact":"guy.pender@me.com",
+        "description":"email"
+      }],
+      "urls":[{
+        "contact":"guy.pender@me.com",
+        "description":"email"
+      }]
+    }
+  ]
 }
