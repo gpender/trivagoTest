@@ -196,6 +196,11 @@
               "description":"email"
             }
           ],
-          "urls":["www.bbc.co.uk"]
+          "urls":[
+            {
+              "contact":"guy.pender@me.com",
+              "description":"email"
+            }
+          ]
       }
   }
