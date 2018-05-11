@@ -36,7 +36,7 @@
                   "max_persons" : 3,
                   "max_adults" : 2,
                   "max_children" : 2,
-                  "max_child_age" : 16
+                  "max_children_age" : 16
               },
               "room_group": {
                   "code" : "e5db04fa67d6",
@@ -189,6 +189,8 @@
                   "contact":"444-444-4444",
                   "description":"Support number"
               }
-          ]
+          ],
+          "emails":"guy.pender@me.com",
+          "urls":"www.bbc.co.uk"
       }
   }
