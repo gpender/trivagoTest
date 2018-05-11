@@ -7,7 +7,6 @@ module.exports = (app) => {
     console.log(req.headers);
 
 const hotelData = {
-  {
       "api_version":1,
       "hotel_id":730099,
       "start_date":"2016-01-25",
