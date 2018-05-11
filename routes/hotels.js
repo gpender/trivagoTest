@@ -7,72 +7,200 @@ module.exports = (app) => {
     console.log(req.headers);
 
 const hotelData = {
-"api_version": 4,
-"lang": "en_GB",
-"hotels": [
-{
-"partner_reference": "5568",
-"name": "Hotel Adlon",
-"street": "Unter den Linden 77",
-"city": "Berlin",
-"postal_code": "10117",
-"state": "NRW",
-"country": "Germany",
-"latitude": 52.51624,
-"longitude": 13.380437,
-"desc": "Welcome to the hotel Adlon Kempinski, a hotel full of tradition and elegance in the heart of the city center.",
-"amenities": [
-"Beauty Center",
-"Business Center",
-"Café/ Bistro",
-"Sauna"
-],
-"url": "http://advertiser-site.com/hoteladlon",
-"email": "adlon@adlon.com",
-"phone": "030-123123",
-"fax": "030-12341234",
-"room_types": {
-"Executive Double": {
-"url": "http://advertiser-site.com/hoteladlon/executive_double",
-"desc": "When Lorenz Adlon opened this luxury hotel in 1907, he fulfilled his lifetime dream. The incredible aura of Hotel Adlon embraces you as soon as you cross the door."
-},
-"Superior Deluxe Double": {
-"url": "http://advertiser-site.com/hoteladlon/superior_deluxe_Double",
-"desc": "The view from the window is too spectacular to be ignored."
-}
-}
-},
-{
-"partner_reference": "12345",
-"name": "Hotel Majestic",
-"street": "Viale Milano 18",
-"city": "Rome",
-"postal_code": "00115",
-"state": "Lazio",
-"country": "Italy",
-"latitude": 132.51624,
-"longitude": 10.380437,
-"desc": "Welcome to the hotel Majestic, a hotel full of tradition and elegance in the heart of the city center.",
-"amenities": [
-"Beauty Center",
-"Business Center",
-"Café/ Bistro",
-"Sauna"
-],
-"url": "http://advertiser-site.com/hotelmajestic",
-"email": "majestic@majestic.com",
-"phone": "030-123123",
-"fax": "030-12341234",
-"room_types": {
-"Superior Deluxe Double": {
-"url": "http://advertiser-site.com/hotelmajestic/superior_deluxe_Double",
-"desc": "The view from the window is too spectacular to be ignored."
-}
-}
-}
-]
-};
-
+  {
+      "api_version":1,
+      "hotel_id":730099,
+      "start_date":"2016-01-25",
+      "end_date":"2016-01-26",
+      "party":[
+          {
+              "adults":2,
+              "children":[
+                  1
+              ]
+          }
+      ],
+      "lang":"en_US",
+      "user_country":"US",
+      "room_types_array":[
+          {
+              "name":"Double Room, 1 King Bed",
+              "final_price_at_booking":{
+                  "amount":100,
+                  "currency":"USD"
+              },
+              "final_price_at_checkout":{
+                  "amount":5,
+                  "currency":"USD"
+              },
+              "description":"Air-conditioned room with a minibar, desk and private bathroom.",
+              "rooms_available":4,
+              "partner_data":{
+                  "identifier_for_something":"9614b191-9e1b-4b7d-9cbc-5b9204ac2a2a"
+              },
+              "rate_key" : "0fd6eca9-9c33-4978-b9bc-b3f3d60f6205",
+              "room_type" : "STANDARD",
+              "occupancy" : {
+                  "standard_persons" : 2,
+                  "max_persons" : 3,
+                  "max_adults" : 2,
+                  "max_children" : 2,
+                  "max_child_age" : 16
+              },
+              "room_group": {
+                  "code" : "e5db04fa67d6",
+                  "name" : "Cozy Double Room",
+                  "description" : "Air-conditioned room with a minibar, desk and private bathroom."
+               },
+              "line_items":[
+                  {
+                      "price":{
+                          "amount":100,
+                          "currency":"USD"
+                      },
+                      "type":"net_rate",
+                      "paid_at_checkout":false,
+                      "description":"base price"
+                  },
+                  {
+                      "price":{
+                          "amount":5,
+                          "currency":"USD"
+                      },
+                      "type":"city_tax",
+                      "paid_at_checkout":true,
+                      "description":"city tax"
+                  }
+              ],
+              "amenities":[
+                  "free bottle of water",
+                  "air condition"
+              ],
+              "value_adds" : [
+                  "FREE_BREAKFAST",
+                  "FREE_INTERNET",
+                  "FREE_PARKING"
+              ],
+              "payment_methods": [
+                  {
+                      "code": "PaymentCard",
+                      "options": [
+                          {
+                              "code": "MasterCard",
+                              "fee": {
+                                  "amount": 0.0,
+                                  "currency": "USD"
+                              }
+                          },
+                          {
+                              "code": "Visa",
+                              "fee": {
+                                  "amount": 2.77,
+                                  "currency": "USD"
+                              }
+                          }
+                      ]
+                  },
+                  {
+                      "code": "ExternalProvider",
+                      "options": [
+                          {
+                              "code": "Paypal",
+                              "fee": {
+                                  "amount": 0.0,
+                                  "currency": "USD"
+                              }
+                          }
+                      ]
+                   },
+                   {
+                      "code": "BankAccount",
+                      "options": [
+                          {
+                              "code": "DirectDebit",
+                              "fee": {
+                                  "amount": 0,
+                                  "currency": "GBP"
+                              }
+                          }
+                      ]
+                  },
+                  {
+                      "code": "ManualPayment",
+                      "options": [
+                          {
+                              "code": "BankTransfer",
+                              "fee": {
+                                  "amount": 0,
+                                  "currency": "GBP"
+                              }
+                          }
+                      ]
+                  }
+              ],
+              "photos":[
+                  {
+                      "url":"https://trv-companypages.s3-eu-central-1.amazonaws.com/wp-content/uploads/sites/2/2015/07/trivago_logo_twitter-1024x512.png",
+                      "caption":"Trivago logo",
+                      "width":1024,
+                      "height":512
+                  }
+              ],
+              "cancellation": {
+  				"policy": "free text",
+  				"penalties": [
+  					{
+  						"fee": {
+  							"amount": 20.0,
+  							"currency": "USD"
+  						}
+  					},
+  					{
+  						"from": "2016-01-18T16:00:00+0000",
+  						"fee": {
+  							"amount": 100.0,
+  							"currency": "USD"
+  						}
+  					}
+  				]
+  			}
+          }
+      ],
+      "hotel_details":{
+          "name":"Some Awesome Hotel",
+          "address1":"52977 Ismael Bridge",
+          "city":"South Maurice",
+          "state":"NY",
+          "postal_code":"01234",
+          "country":"USA",
+          "latitude":-61.7414,
+          "longitude":-174.122,
+          "phone":"(509) 711-6896",
+          "url":"http://www.hotel-site.com/welcome",
+          "amenities":[
+              "RESTAURANT",
+              "NON_SMOKING",
+              "FREE_PARKING"
+          ],
+          "photos":[
+              {
+                  "url":"https://trv-companypages.s3-eu-central-1.amazonaws.com/wp-content/uploads/sites/2/2015/07/trivago_logo_twitter-1024x512.png",
+                  "caption":"Trivago logo",
+                  "width":1024,
+                  "height":512
+              }
+          ],
+          "checkinout_policy":"check-in from 3pm and check-out till 12am"
+      },
+      "customer_support":{
+          "phone_numbers":[
+              {
+                  "contact":"444-444-4444",
+                  "description":"Support number"
+              }
+          ]
+      }
+  };
 
     res.send(JSON.stringify(hotelData));
   })
