@@ -190,7 +190,12 @@
                   "description":"Support number"
               }
           ],
-          "emails":["guy.pender@me.com"],
+          "emails":[
+            {
+              "contact":"guy.pender@me.com",
+              "description":"email"
+            }
+          ],
           "urls":["www.bbc.co.uk"]
       }
   }
