@@ -69,8 +69,8 @@
     "amount": 5.00,
     "currency": "USD"
   },
-  "status":"cancelled",
-  "customer_support":[
+  "status":"Booked",
+  "customer_support":
     {
       "phone_numbers":[{
         "contact":"guy.pender@me.com",
@@ -85,5 +85,4 @@
         "description":"email"
       }]
     }
-  ]
 }
