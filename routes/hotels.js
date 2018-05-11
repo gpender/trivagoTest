@@ -1,6 +1,7 @@
 
 module.exports = (app) => {
   app.post('/api/booking_submit',(req,res)=>{
+    console.log('booking_submit');
       const bookingInfo = {
         "checkin_date": "2016-01-25",
         "checkout_date": "2016-01-26",
@@ -79,8 +80,7 @@ module.exports = (app) => {
 
 
   app.post('/api/booking_availability',(req,res)=>{
-    console.log(req.body);
-    console.log(req.headers);
+    console.log('booking_availability');
 
 const hotelData = {
       "api_version":1,
